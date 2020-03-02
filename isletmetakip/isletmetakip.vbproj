@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44D257B7-F444-4000-A450-79CBDC357F3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>isletmetakip.My.MyApplication</StartupObject>
+    <RootNamespace>isletmetakip</RootNamespace>
+    <AssemblyName>isletmetakip</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>isletmetakip.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>isletmetakip.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ceksenetkayit.Designer.vb">
+      <DependentUpon>ceksenetkayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ceksenetkayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceksenettakip.Designer.vb">
+      <DependentUpon>ceksenettakip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ceksenettakip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emanetguncelle.Designer.vb">
+      <DependentUpon>emanetguncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emanetguncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emanettakip.Designer.vb">
+      <DependentUpon>emanettakip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emanettakip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firmasec.Designer.vb">
+      <DependentUpon>firmasec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="firmasec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ihalegüncelle.Designer.vb">
+      <DependentUpon>ihalegüncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ihalegüncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ihalekaydet.Designer.vb">
+      <DependentUpon>ihalekaydet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ihalekaydet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ihaletakip.Designer.vb">
+      <DependentUpon>ihaletakip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ihaletakip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu1.Designer.vb">
+      <DependentUpon>menu1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menu1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriekle.Designer.vb">
+      <DependentUpon>musteriekle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="musteriekle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriodemesi.Designer.vb">
+      <DependentUpon>musteriodemesi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="musteriodemesi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteritakip.Designer.vb">
+      <DependentUpon>musteritakip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="musteritakip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="personeleodemeyap.Designer.vb">
+      <DependentUpon>personeleodemeyap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personeleodemeyap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelguncelle.Designer.vb">
+      <DependentUpon>personelguncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personelguncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelkayit.Designer.vb">
+      <DependentUpon>personelkayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personelkayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personeltakip.Designer.vb">
+      <DependentUpon>personeltakip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personeltakip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifre.Designer.vb">
+      <DependentUpon>sifre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sifre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokamalal.Designer.vb">
+      <DependentUpon>stokamalal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stokamalal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoktakip.Designer.vb">
+      <DependentUpon>stoktakip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stoktakip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veresiyeyaz.Designer.vb">
+      <DependentUpon>veresiyeyaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="veresiyeyaz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firmayaodemeyap.Designer.vb">
+      <DependentUpon>firmayaodemeyap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="firmayaodemeyap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veritabanı_işlemleri.Designer.vb">
+      <DependentUpon>veritabanı_işlemleri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="veritabanı_işlemleri.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ceksenetkayit.resx">
+      <DependentUpon>ceksenetkayit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceksenettakip.resx">
+      <DependentUpon>ceksenettakip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emanetguncelle.resx">
+      <DependentUpon>emanetguncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emanettakip.resx">
+      <DependentUpon>emanettakip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firmasec.resx">
+      <DependentUpon>firmasec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ihalegüncelle.resx">
+      <DependentUpon>ihalegüncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ihalekaydet.resx">
+      <DependentUpon>ihalekaydet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ihaletakip.resx">
+      <DependentUpon>ihaletakip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu1.resx">
+      <DependentUpon>menu1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriekle.resx">
+      <DependentUpon>musteriekle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriodemesi.resx">
+      <DependentUpon>musteriodemesi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteritakip.resx">
+      <DependentUpon>musteritakip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personeleodemeyap.resx">
+      <DependentUpon>personeleodemeyap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelguncelle.resx">
+      <DependentUpon>personelguncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelkayit.resx">
+      <DependentUpon>personelkayit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personeltakip.resx">
+      <DependentUpon>personeltakip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifre.resx">
+      <DependentUpon>sifre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokamalal.resx">
+      <DependentUpon>stokamalal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stoktakip.resx">
+      <DependentUpon>stoktakip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veresiyeyaz.resx">
+      <DependentUpon>veresiyeyaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firmayaodemeyap.resx">
+      <DependentUpon>firmayaodemeyap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veritabanı_işlemleri.resx">
+      <DependentUpon>veritabanı_işlemleri.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteri takip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çek senet takip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stok takibi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amblem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\son8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aktif borcu sil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aktif ödemeyi sil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesaba yaz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteri ödemesi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteri sil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteri ekle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaydet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iptal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ürün alma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ödeme yap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emanet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aktif kaydı sil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veritabanı yedek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\düzeltme yap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kapat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seçili çek senet öde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çek senet kayıt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ödenenleri göster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ödenecekleir göster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aktif çek senet sil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tüm çek senetleri göster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İHALE İŞLEMLERİ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
